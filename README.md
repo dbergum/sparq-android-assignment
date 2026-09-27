@@ -9,6 +9,10 @@ response's `next` URL to load pages in the background as you scroll.
 - Unit tests: `./gradlew testDebugUnitTest`
 - Compose UI test (needs an emulator or device): `./gradlew connectedDebugAndroidTest`
 
+> **Emailed copy:** Gmail blocks `.bat` and `.jar` files, so `gradlew.bat` and `gradle/wrapper/gradle-wrapper.jar`
+> are not in the zip. Android Studio opens and builds the project without them. To use `./gradlew` from the
+> command line, restore them first with `gradle wrapper --gradle-version 9.6.1` (any installed Gradle works).
+
 ## Architecture (MVVM + repository, single source of truth)
 
 ```
